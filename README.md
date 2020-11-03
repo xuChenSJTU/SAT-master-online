@@ -17,7 +17,7 @@ pytorch>=1.0.
 3. Note the name "NANG" appears in ours codes is exactly the name of our "SAT" method.  
 "NANG" (Node Attribute Neural Generator) is an old name we used in the previous version.  
 
-################# Usage ########################. 
+################# Usage ########################.   
 This file contains:  
 1. NANG's code (NANG_main.py). 
 With special parameter setting in NANG_main.py we can get the NANG-no cross, NANG-no self and NANG-no adver in our paper. 
