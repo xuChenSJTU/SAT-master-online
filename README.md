@@ -1,15 +1,15 @@
 # SAT-master-online. 
 This is a Pytorch implementation of our "Learning on Attribute-Missing Graphs".  
  
- #################################################################################################################. 
+ ####################################################################################. 
 1. It is accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2020. 
 You can access the paper in:   
 
 2. An old version of our paper is in: https://arxiv.org/abs/1907.09708. 
 
-################# Requirements ########################. 
-networkx==2.2. 
-pytorch==1.0. 
+################# Requirements ########################.   
+networkx==2.2.   
+pytorch==1.0.   
 
 ################# Notes ########################. 
 1. This code is an example code for the node attribute completion task of our SAT paper.  
