@@ -9,7 +9,7 @@ You can access the paper in: https://ieeexplore.ieee.org/document/9229522 or
 
 ################# Requirements ########################.   
 networkx==2.2.   
-pytorch==1.0.   
+pytorch>=1.0.   
 
 ################# Notes ########################. 
 1. This code is an example code for the node attribute completion task of our SAT paper.  
