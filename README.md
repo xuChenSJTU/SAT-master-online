@@ -5,7 +5,7 @@ This is a Pytorch implementation of our "Learning on Attribute-Missing Graphs".
 1. It is accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2020. 
 You can access the paper in: https://ieeexplore.ieee.org/document/9229522 or https://arxiv.org/abs/2011.01623     
 
-2. An old version of our paper is in: https://arxiv.org/abs/1907.09708. 
+2. An old version of our paper is in: https://arxiv.org/abs/1907.09708   
 
 ################# Requirements ########################.   
 networkx==2.2.   
@@ -136,3 +136,11 @@ if you want to run them you need to creat necessary soft links which point to fi
 3. Thanks for your interest in our paper. I am busy in these days, I would provide more related codes, when I am free.    
 
 4. If you find the codes or dataset (i.e. steam) useful, please cite our paper, Thank you!  
+@article{chen2020learning,  
+  title={Learning on Attribute-Missing Graphs},  
+  author={Xu Chen and Siheng Chen and Jiangchao Yao and Huangjie Zheng and Ya Zhang and Ivor W Tsang},  
+  journal={IEEE transactions on pattern analysis and machine intelligence},  
+  year={2020},  
+  publisher={IEEE}  
+}  
+
