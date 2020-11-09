@@ -22,12 +22,12 @@ This dir contains:
 1. NANG's code (NANG_main.py). 
 With special parameter setting in NANG_main.py we can get the NANG-no cross, NANG-no self and NANG-no adver in our paper. 
 
-2. Codes example baselines in our paper,  
+2. Examples of baseline codes,  
 (baseline VAE:VAE_main.py, baseline GCN: GCN_main.py, baseline GAT: GCN_main.py, baseline NeighAggre: NeighAggre_main.py). 
 
 3. The evaluation codes including the profiling and node classification (eva_classification_X.py, eva_classification_AX.py). 
 
-4. Data process (precoess.py in ./data), note this file is only used for steam dataset. For cora, citeseer and pubmed, they. 
+4. Data process (precoess.py in ./data), note this file is only used for steam dataset. For cora, citeseer and pubmed, they 
 are processed during training.  
 
 5. Examples of datasets including cora, citeseer, pubmed and steam (in ./data). 
