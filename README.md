@@ -1,7 +1,7 @@
 # SAT-master-online. 
 This is a Pytorch implementation of our "Learning on Attribute-Missing Graphs".  
  
- ####################################################################################. 
+####################################################################################. 
 1. It is accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2020. 
 You can access the paper in: https://ieeexplore.ieee.org/document/9229522 or https://arxiv.org/abs/2011.01623     
 
@@ -33,7 +33,7 @@ are processed during training.
 5. Examples of datasets including cora, citeseer, pubmed and steam (in ./data). 
 
 How to use:  
-Step1: process the data, if you want to do the experiment of Steam, you need to. 
+**Step1**: process the data, if you want to do the experiment of Steam, you need to. 
 preprocess it first (other datasets are already processed), so check the parameter. 
 setting and run the code in ./data/process.py using:  
 
@@ -41,7 +41,7 @@ python process.py.
 
 If you do not want to run the codes on steam, you can directly skip step 1 to step 2.  
 
-Step2: Check the parameter setting in NANG_main.py,   
+**Step2**: Check the parameter setting in NANG_main.py,   
 and the parameters used in our paper is as following:  
 -------------------------------Cora---------------------------    
 topK_list = [10, 20, 50].   
@@ -115,7 +115,7 @@ CUDA_VISIBLE_DEVICES=GPU_num python NANG_main.py
 CPU mode:    
 CUDA_VISIBLE_DEVICES=<space> python NANG_main.py   
 
-Step3: After you run NANG_main.py, for Cora, Citeseer and Steam, it will directly print the profiling results.    
+**Step3**: After you run NANG_main.py, for Cora, Citeseer and Steam, it will directly print the profiling results.    
 For Cora, Citeseer and Pubmed, it will save the generated attributes.    
 So if you want to make evaluation for the generated attributes with node classification task, check the parameter settings in 
 eva_classification_X.py and eva_classification_AX.py, then run it by using:    
