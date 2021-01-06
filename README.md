@@ -43,88 +43,88 @@ If you do not want to run the codes on steam, you can directly skip step 1 to st
 
 Step2: Check the parameter setting in NANG_main.py,   
 and the parameters used in our paper is as following:  
--------------------------------Cora---------------------------  
-topK_list = [10, 20, 50]. 
-args.dataset='cora'. 
-args.epoches=1000. 
-args.lr=0.005. 
-args.enc_name='GCN' or 'GAT' # choose the encoder for NANG. 
-args.alpha=0.2. 
-args.dropout=0.5. 
-args.patience=100. 
-args.neg_times=1. 
-args.n_gene=2  # G step. 
-args.n_disc=1  # D step. 
-args.lambda_recon=1.0  # for self stream  
-args.lambda_cross=10.0 # for cross stream. 
-args.lambda_gan=1.0   # this parameter is always 1.0, you can ignore it. 
-
--------------------------------Citeseer---------------------------  
-topK_list = [10, 20, 50]. 
-args.dataset='citeseer'. 
-args.epoches=1000. 
-args.lr=0.005. 
-args.enc_name='GCN' or 'GAT' # choose the encoder for NANG. 
-args.alpha=0.2. 
-args.dropout=0.5. 
-args.patience=100. 
-args.neg_times=1. 
-args.n_gene=2  # G step. 
-args.n_disc=1  # D step. 
+-------------------------------Cora---------------------------    
+topK_list = [10, 20, 50].   
+args.dataset='cora'.   
+args.epoches=1000.   
+args.lr=0.005.   
+args.enc_name='GCN' or 'GAT' # choose the encoder for NANG.   
+args.alpha=0.2.   
+args.dropout=0.5.   
+args.patience=100.   
+args.neg_times=1.   
+args.n_gene=2  # G step.   
+args.n_disc=1  # D step.   
 args.lambda_recon=1.0  # for self stream    
-args.lambda_cross=10.0 # for cross stream. 
-args.lambda_gan=1.0   # this parameter is always 1.0, you can ignore it. 
+args.lambda_cross=10.0 # for cross stream.   
+args.lambda_gan=1.0   # this parameter is always 1.0, you can ignore it.   
 
--------------------------------Pubmed---------------------------  
-topK_list = [10, 20, 50] # this parameter will be useless for Pubmed. 
-args.dataset='pubmed'. 
-args.epoches=1000. 
-args.lr=0.005. 
-args.enc_name='GCN' or 'GAT' # choose the encoder for NANG. 
-args.alpha=0.2. 
-args.dropout=0.5. 
-args.patience=100. 
-args.neg_times=1. 
-args.n_gene=5  # G step. 
-args.n_disc=1  # D step. 
-args.lambda_recon=1.0  # for self stream  
-args.lambda_cross=50.0 # for cross stream. 
-args.lambda_gan=1.0   # this parameter is always 1.0, you can ignore it. 
+-------------------------------Citeseer---------------------------    
+topK_list = [10, 20, 50].   
+args.dataset='citeseer'.   
+args.epoches=1000.   
+args.lr=0.005.   
+args.enc_name='GCN' or 'GAT' # choose the encoder for NANG.   
+args.alpha=0.2.   
+args.dropout=0.5.   
+args.patience=100.   
+args.neg_times=1.   
+args.n_gene=2  # G step.   
+args.n_disc=1  # D step.   
+args.lambda_recon=1.0  # for self stream      
+args.lambda_cross=10.0 # for cross stream.   
+args.lambda_gan=1.0   # this parameter is always 1.0, you can ignore it.   
+
+-------------------------------Pubmed---------------------------    
+topK_list = [10, 20, 50] # this parameter will be useless for Pubmed.   
+args.dataset='pubmed'.   
+args.epoches=1000.   
+args.lr=0.005.   
+args.enc_name='GCN' or 'GAT' # choose the encoder for NANG.   
+args.alpha=0.2.   
+args.dropout=0.5.   
+args.patience=100.   
+args.neg_times=1.   
+args.n_gene=5  # G step.   
+args.n_disc=1  # D step.   
+args.lambda_recon=1.0  # for self stream    
+args.lambda_cross=50.0 # for cross stream.   
+args.lambda_gan=1.0   # this parameter is always 1.0, you can ignore it.   
 
 -------------------------------Steam---------------------------  
-topK_list = [3, 5, 10]. 
-args.dataset='steam'. 
-args.epoches=1000. 
-args.lr=0.005. 
-args.enc_name='GCN' or 'GAT' # choose the encoder for NANG. 
-args.alpha=0.2  
-args.dropout=0.5. 
-args.patience=100. 
-args.neg_times=1. 
-args.n_gene=5  # G step. 
-args.n_disc=1  # D step. 
-args.lambda_recon=1.0  # for self stream. 
-args.lambda_cross=10.0 # for cross stream. 
-args.lambda_gan=1.0   # this parameter is always 1.0, you can ignore it. 
+topK_list = [3, 5, 10].   
+args.dataset='steam'.   
+args.epoches=1000.   
+args.lr=0.005.   
+args.enc_name='GCN' or 'GAT' # choose the encoder for NANG.   
+args.alpha=0.2    
+args.dropout=0.5.   
+args.patience=100.   
+args.neg_times=1.   
+args.n_gene=5  # G step.   
+args.n_disc=1  # D step.   
+args.lambda_recon=1.0  # for self stream.   
+args.lambda_cross=10.0 # for cross stream.   
+args.lambda_gan=1.0   # this parameter is always 1.0, you can ignore it.   
 
-If you get the right parameter setting, you can run the code using:  
+If you get the right parameter setting, you can run the code using:    
 
-GPU mode:  
-CUDA_VISIBLE_DEVICES=GPU_num python NANG_main.py.  
+GPU mode:    
+CUDA_VISIBLE_DEVICES=GPU_num python NANG_main.py    
 
-CPU mode:  
-CUDA_VISIBLE_DEVICES=<space> python NANG_main.py. 
+CPU mode:    
+CUDA_VISIBLE_DEVICES=<space> python NANG_main.py   
 
-Step3: After you run NANG_main.py, for Cora, Citeseer and Steam, it will directly print the profiling results.  
-For Cora, Citeseer and Pubmed, it will save the generated attributes.  
-So if you want to make evaluation for the generated attributes with node classification task, check the parameter settings in. 
-eva_classification_X.py and eva_classification_AX.py, then run it by using:  
+Step3: After you run NANG_main.py, for Cora, Citeseer and Steam, it will directly print the profiling results.    
+For Cora, Citeseer and Pubmed, it will save the generated attributes.    
+So if you want to make evaluation for the generated attributes with node classification task, check the parameter settings in 
+eva_classification_X.py and eva_classification_AX.py, then run it by using:    
 
-Node Classification with Only Attributes (GPU mode):  
-CUDA_VISIBLE_DEVICES=GPU_num python eva_classification_X.py. 
+Node Classification with Only Attributes (GPU mode):    
+CUDA_VISIBLE_DEVICES=GPU_num python eva_classification_X.py   
 
-Node Classification with Both Attributes and Structures (GPU mode):  
-CUDA_VISIBLE_DEVICES=GPU_num python eva_classification_AX.py. 
+Node Classification with Both Attributes and Structures (GPU mode):    
+CUDA_VISIBLE_DEVICES=GPU_num python eva_classification_AX.py   
 
 #####################Other things#############################. 
 1. If you want to run the baseline codes, follow similar steps.  
