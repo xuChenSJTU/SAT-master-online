@@ -1,4 +1,5 @@
-# SAT-master-online. 
+# SAT-master-online.  
+## Paper Information
 This is a Pytorch implementation of our "Learning on Attribute-Missing Graphs" in terms of the node attribute completion task.
 The codes of link prediction task are on: https://github.com/xuChenSJTU/SAT-master-link-prediction
  
@@ -8,7 +9,7 @@ You can access the paper in: https://ieeexplore.ieee.org/document/9229522 or htt
 
 2. An old version of our paper is in: https://arxiv.org/abs/1907.09708   
 
-################# Requirements ########################.   
+## Requirements 
 networkx==2.2.   
 pytorch>=1.0.   
 
@@ -18,7 +19,7 @@ pytorch>=1.0.
 3. Note the name "NANG" appears in ours codes is exactly the name of our "SAT" method.  
 "NANG" (Node Attribute Neural Generator) is an old name we used in the previous version.  
 
-################# Usage ########################.   
+## How to use  
 This dir contains:  
 1. NANG's code (NANG_main.py). 
 With special parameter setting in NANG_main.py we can get the NANG-no cross, NANG-no self and NANG-no adver in our paper. 
@@ -33,7 +34,6 @@ are processed during training.
 
 5. Examples of datasets including cora, citeseer, pubmed and steam (in ./data). 
 
-How to use:  
 **Step1**: process the data, if you want to do the experiment of Steam, you need to. 
 preprocess it first (other datasets are already processed), so check the parameter. 
 setting and run the code in ./data/process.py using:  
@@ -125,9 +125,10 @@ Node Classification with Only Attributes (GPU mode):
 CUDA_VISIBLE_DEVICES=GPU_num python eva_classification_X.py   
 
 Node Classification with Both Attributes and Structures (GPU mode):    
-CUDA_VISIBLE_DEVICES=GPU_num python eva_classification_AX.py   
-
-#####################Other things#############################. 
+CUDA_VISIBLE_DEVICES=GPU_num python eva_classification_AX.py. 
+ 
+ 
+## Reference. 
 1. If you want to run the baseline codes, follow similar steps.  
 
 2. Note that OpenNE contains the codes for DeepWalk and LINE,   
