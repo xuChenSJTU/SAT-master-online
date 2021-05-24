@@ -135,7 +135,7 @@ CUDA_VISIBLE_DEVICES=GPU_num python eva_classification_AX.py.
 if you want to run them you need to creat necessary soft links which point to files in ./data,   
 ./features, ./output, ./evaluation.py, ./utils.py, ./figures. 
 
-3. Thanks for your interest in our paper. I am busy in these days, I would provide more related codes when I am free.    
+3. Thanks for your interest in our paper.    
 
 4. If you find the codes or dataset (i.e. steam) useful, please cite our paper, Thank you!  
 @article{chen2020learning,  
