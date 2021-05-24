@@ -6,7 +6,7 @@ The codes of link prediction task are on: https://github.com/xuChenSJTU/SAT-mast
 networkx==2.2.   
 pytorch>=1.0.   
 
-################# Notes ########################. 
+**some notes**:   
 1. This code is an example code for the node attribute completion task of our SAT paper.  
 2. Some example backbones and datasets are provided so that you can directly run them.  
 3. Note the name "NANG" appears in ours codes is exactly the name of our "SAT" method.  
