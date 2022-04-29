@@ -134,11 +134,11 @@ if you want to run them you need to creat necessary soft links which point to fi
 ./features, ./output, ./evaluation.py, ./utils.py, ./figures.   
 
 5. Thanks for your interest in our paper.  If you find the codes or dataset (i.e. steam) useful, please cite our paper, Thank you!  
-@article{chen2020learning,  
+@article{chen2022learning,  
   title={Learning on Attribute-Missing Graphs},  
   author={Xu Chen and Siheng Chen and Jiangchao Yao and Huangjie Zheng and Ya Zhang and Ivor W Tsang},  
   journal={IEEE transactions on pattern analysis and machine intelligence},  
-  year={2020},  
+  year={2022},  
   publisher={IEEE}  
 }  
 
