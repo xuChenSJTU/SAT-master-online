@@ -1,5 +1,5 @@
 # SAT-master-online.  
-This is a Pytorch implementation of our "Learning on Attribute-Missing Graphs" in terms of the node attribute completion task.  
+This is a Pytorch implementation of our "Learning on Attribute-Missing Graphs" on the node attribute completion task.  
 The codes of link prediction task are on: https://github.com/xuChenSJTU/SAT-master-link-prediction    
 
 ## Requirements 
